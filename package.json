@@ -1,0 +1,67 @@
+{
+  "name": "@mutt/forms",
+  "version": "2.3.0",
+  "license": "MIT",
+  "author": {
+    "name": "Nick Snell",
+    "email": "nick@boughtbymany.com"
+  },
+  "main": "src/index.js",
+  "module": "dist/mutt-forms.es.js",
+  "description": "HTML Forms with a squishy face.",
+  "homepage": "https://github.com/mutt-forms/mutt-forms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mutt-forms/mutt-forms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mutt-forms/mutt-forms/issues"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "mutt-forms",
+    "forms",
+    "htmlforms",
+    "form",
+    "mutt"
+  ],
+  "dependencies": {
+    "deepmerge": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "jsdoc": "^3.6.3",
+    "prettier": "^1.15.2",
+    "release-it": "^12.4.3",
+    "rollup": "^1.31.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublish": "npm run build",
+    "release": "release-it"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
